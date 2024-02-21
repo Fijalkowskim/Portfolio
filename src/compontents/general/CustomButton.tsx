@@ -8,9 +8,9 @@ const variants = cva(
   {
     variants: {
       variant: {
-        default: "bg-action-300 hover:bg-action-400  ",
+        default: "bg-action-600 hover:bg-action-700 text-primary-50 ",
         inverted:
-          "border-2 border-action-400 bg-primary-50 hover:bg-primary-100",
+          "border-2 border-action-600 bg-primary-50 hover:bg-primary-100",
         darker: "bg-action-400 hover:bg-action-500",
       },
     },

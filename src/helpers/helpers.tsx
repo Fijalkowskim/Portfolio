@@ -15,3 +15,6 @@ export const compareDates = (date1: Date, date2: Date): boolean => {
     date1.getDate() === date2.getDate()
   );
 };
+export const Delay = (delay: number) => {
+  return new Promise((res) => setTimeout(res, delay));
+};

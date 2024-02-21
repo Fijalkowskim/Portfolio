@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         primary: ["Poppins", "sans-serif"],
         secondary: ["Ubuntu", "sans-serif"],
+        code: ["Kode Mono", "monospace"],
       },
       colors: {
         text: {

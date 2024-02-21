@@ -42,8 +42,8 @@ function Navbar() {
           <NavbarLink text={n.name} to={n.to} />
         ))}
         <div className="ml-auto space-x-3">
-          <CustomButton className="min-w-32">Contact</CustomButton>
-          <CustomButton className="min-w-32" variant={"inverted"}>
+          <CustomButton className="min-w-28 text-base">Contact</CustomButton>
+          <CustomButton className="min-w-28 text-base" variant={"inverted"}>
             CV
           </CustomButton>
         </div>
