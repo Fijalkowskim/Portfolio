@@ -5,3 +5,7 @@
 body {
   @apply bg-background-100 font-primary font-light scroll-smooth;
 }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}

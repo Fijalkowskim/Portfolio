@@ -8,7 +8,7 @@ interface Props {
 }
 const letterAnimation = {
   initial: { y: 0, x: 0 },
-  animate: { y: [0, -1, 0], x: [0, 1, 0] },
+  animate: { y: [0, -1, 0], x: [0, 0.5, 0] },
 };
 function NavbarLink(props: Props) {
   const controls = useAnimation();

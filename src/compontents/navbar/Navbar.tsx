@@ -7,7 +7,7 @@ import CustomButton from "../general/CustomButton";
 import NavbarLink from "./NavbarLink";
 
 const navlinks = [
-  { name: "About", to: "#" },
+  { name: "About", to: "#about" },
   { name: "Skills", to: "#" },
   { name: "Projects", to: "#" },
 ];
@@ -32,7 +32,7 @@ function Navbar() {
     >
       <NavbarLink
         text="Fijalkowskim"
-        to={"#"}
+        to={"#hero"}
         className="text-2xl italic mr-4"
       />
       <div
@@ -77,7 +77,7 @@ function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: 500 }}
               transition={{ duration: 0.1 }}
-              className="absolute right-0 top-0 flex h-full w-fit flex-col items-end gap-4 bg-primary-900 p-4 px-4 text-right text-2xl shadow-md"
+              className="absolute right-0 top-0 flex h-full w-fit flex-col items-end gap-4 bg-primary-50 p-4 px-4 text-right text-2xl shadow-md"
             >
               <motion.button
                 className="cursor-pointer text-4xl"
@@ -95,6 +95,12 @@ function Navbar() {
                   <NavbarLink text={n.name} to={n.to} />
                 </div>
               ))}
+              <CustomButton className="min-w-28 text-base">
+                Contact
+              </CustomButton>
+              <CustomButton className="min-w-28 text-base" variant={"inverted"}>
+                CV
+              </CustomButton>
             </motion.ul>
           </motion.div>
         )}

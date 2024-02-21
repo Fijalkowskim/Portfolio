@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import bgTexture from "../../images/heroBg.jpg";
-const svgDelay = 1;
+const svgDelay = 2;
 function AnimatedBackground() {
   return (
     <div className="absolute -z-10 top-0 left-0 w-full h-full overflow-hidden opacity-60">
@@ -9,7 +9,7 @@ function AnimatedBackground() {
         animate={{
           transition: {
             repeat: Infinity,
-            duration: 5,
+            duration: 15,
             ease: "easeInOut",
             times: [0, 0.4, 0.8, 1],
           },

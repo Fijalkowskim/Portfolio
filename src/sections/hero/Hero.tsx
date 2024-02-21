@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 import AnimatedBackground from "./AnimatedBackground";
 function Hero() {
   return (
-    <div className="realtive h-screen flex sm:flex-row flex-col text-center sm:text-left items-center justify-center gap-3 overflow-hidden sm:p-4">
+    <div
+      id="hero"
+      className="realtive h-screen flex sm:flex-row flex-col text-center sm:text-left items-center justify-center gap-3 overflow-hidden sm:p-4"
+    >
       <motion.div
         initial={{ scale: 0 }}
         animate={{
