@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { VariantProps, cva } from "class-variance-authority";
 
 const variants = cva(
-  "flex items-center text-primary-950 justify-center px-2 py-1 rounded-md shadow-sm transition-colors text-center mx-auto transition-all font-normal uppercase",
+  "flex items-center text-primary-950 justify-center px-2 py-1 rounded-md shadow-sm transition-colors text-center mx-auto transition-all ",
   {
     variants: {
       variant: {

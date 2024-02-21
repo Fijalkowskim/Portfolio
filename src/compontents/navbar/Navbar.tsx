@@ -3,9 +3,8 @@ import { useSettingsContext } from "../../context/SettingsContext";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GoX } from "react-icons/go";
-import NavbarLink from "./NavbarLink";
 import CustomButton from "../general/CustomButton";
-import Logo from "./Logo";
+import NavbarLink from "./NavbarLink";
 
 const navlinks = [
   { name: "About", to: "#" },
@@ -29,14 +28,18 @@ function Navbar() {
 
   return (
     <div
-      className={`fixed left-0 top-0 z-20 flex w-screen flex-row items-center justify-center gap-8 bg-background-50 px-5 py-3 text-primary-950 shadow-sm sm:px-20 xl:px-40 text-lg`}
+      className={`fixed left-0 top-0 z-20 flex w-screen flex-row items-center justify-center gap-8 bg-background-50 px-5 py-3 text-primary-950 shadow-sm sm:px-24 xl:px-60 text-lg`}
     >
-      <Logo />
+      <NavbarLink
+        text="Fijalkowskim"
+        to={"#"}
+        className="text-2xl italic mr-4"
+      />
       <div
         className={`hidden flex-row items-center justify-start gap-8 lg:flex w-full`}
       >
         {navlinks.map((n) => (
-          <NavbarLink name={n.name} to={n.to} />
+          <NavbarLink text={n.name} to={n.to} />
         ))}
         <div className="ml-auto space-x-3">
           <CustomButton className="min-w-32">Contact</CustomButton>
@@ -89,7 +92,7 @@ function Navbar() {
                     toggleMobileMenu();
                   }}
                 >
-                  <NavbarLink name={n.name} to={n.to} />
+                  <NavbarLink text={n.name} to={n.to} />
                 </div>
               ))}
             </motion.ul>

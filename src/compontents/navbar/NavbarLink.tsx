@@ -1,19 +1,41 @@
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import Reactfrom from "react";
+import { motion, useAnimation } from "framer-motion";
+import { cn } from "../../helpers/helpers";
 interface Props {
+  className?: string;
+  text: string;
   to: string;
-  name: string;
 }
+const letterAnimation = {
+  initial: { y: 0, x: 0 },
+  animate: { y: [0, -1, 0], x: [0, 1, 0] },
+};
 function NavbarLink(props: Props) {
+  const controls = useAnimation();
   return (
-    <motion.button
-      className={`group transition-colors hover:text-action-600/80`}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 1.01 }}
+    <motion.a
+      href={props.to}
+      className={cn(
+        "group font-light relative w-fit flex-shrink-0 cursor-pointer transition-all hover:text-action-800 active:text-action-950",
+        props.className
+      )}
+      onHoverStart={() => {
+        controls.start("animate");
+      }}
     >
-      <a href={props.to}>{props.name}</a>
-      <div className="w-full h-[0.1px] bg-action-600/50 -mt-1 scale-0 origin-center group-hover:scale-100 transition-all" />
-    </motion.button>
+      {props.text.split("").map((letter, idx) => (
+        <motion.span
+          className="inline-block "
+          transition={{ delay: idx * 0.03, times: [0, 0.4, 1] }}
+          key={idx}
+          variants={letterAnimation}
+          initial="initial"
+          animate={controls}
+        >
+          {letter}
+        </motion.span>
+      ))}
+    </motion.a>
   );
 }
 
