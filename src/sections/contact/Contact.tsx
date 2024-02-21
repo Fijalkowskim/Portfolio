@@ -1,11 +1,11 @@
 import React from "react";
 import SectionBase from "../SectionBase";
-function About() {
+function Contact() {
   return (
-    <SectionBase name="About">
-      <div>About</div>
+    <SectionBase name="Contact">
+      <div>Contact</div>
     </SectionBase>
   );
 }
 
-export default About;
+export default Contact;

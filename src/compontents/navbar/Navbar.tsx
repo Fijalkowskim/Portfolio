@@ -8,8 +8,8 @@ import NavbarLink from "./NavbarLink";
 
 const navlinks = [
   { name: "About", to: "#about" },
-  { name: "Skills", to: "#" },
-  { name: "Projects", to: "#" },
+  { name: "Skills", to: "#skills" },
+  { name: "Projects", to: "#projects" },
 ];
 
 function Navbar() {
@@ -42,7 +42,9 @@ function Navbar() {
           <NavbarLink text={n.name} to={n.to} />
         ))}
         <div className="ml-auto space-x-3">
-          <CustomButton className="min-w-28 text-base">Contact</CustomButton>
+          <a href="#contact">
+            <CustomButton className="min-w-28 text-base">Contact</CustomButton>
+          </a>
           <CustomButton className="min-w-28 text-base" variant={"inverted"}>
             CV
           </CustomButton>
@@ -95,9 +97,11 @@ function Navbar() {
                   <NavbarLink text={n.name} to={n.to} />
                 </div>
               ))}
-              <CustomButton className="min-w-28 text-base">
-                Contact
-              </CustomButton>
+              <a href="#contact">
+                <CustomButton className="min-w-28 text-base">
+                  Contact
+                </CustomButton>
+              </a>
               <CustomButton className="min-w-28 text-base" variant={"inverted"}>
                 CV
               </CustomButton>
