@@ -79,7 +79,7 @@ function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: 500 }}
               transition={{ duration: 0.1 }}
-              className="absolute right-0 top-0 flex h-full w-fit flex-col items-end gap-4 bg-primary-50 p-4 px-4 text-right text-2xl shadow-md"
+              className="absolute right-0 top-0 flex h-full w-fit flex-col items-end gap-4 bg-primary-50 p-4 px-8 text-right text-2xl shadow-md"
             >
               <motion.button
                 className="cursor-pointer text-4xl"
@@ -98,11 +98,22 @@ function Navbar() {
                 </div>
               ))}
               <a href="#contact">
-                <CustomButton className="min-w-28 text-base">
+                <CustomButton
+                  className="min-w-28 text-base"
+                  onClick={() => {
+                    toggleMobileMenu();
+                  }}
+                >
                   Contact
                 </CustomButton>
               </a>
-              <CustomButton className="min-w-28 text-base" variant={"inverted"}>
+              <CustomButton
+                className="min-w-28 text-base"
+                variant={"inverted"}
+                onClick={() => {
+                  toggleMobileMenu();
+                }}
+              >
                 CV
               </CustomButton>
             </motion.ul>
