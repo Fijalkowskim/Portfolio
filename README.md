@@ -5,7 +5,7 @@
 Welcome to my personal portfolio repository! This project is built using React, TypeScript, Framer Motion, and Tailwind CSS to showcase my skills and projects.
 
 ## Live website
-You can check out the live demo of my portfolio [here](#).
+You can check out the live demo of my portfolio [here](https://fijalkowskim.github.io/Portfolio/).
 
 ## Technologies
 - React
