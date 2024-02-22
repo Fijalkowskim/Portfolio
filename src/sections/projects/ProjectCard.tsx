@@ -62,14 +62,14 @@ function ProjectCard({ data, inverted }: Props) {
     <motion.div
       ref={ref}
       className={`flex ${
-        inverted ? "flex-row-reverse" : "flex-row"
-      } items-center justify-center gap-8`}
+        inverted ? "flex-col lg:flex-row-reverse" : "flex-col lg:flex-row"
+      } items-center justify-center gap-8 p-2`}
     >
       <motion.div
         variants={variants}
         initial={`${inverted ? "hiddenRight" : "hiddenLeft"}`}
         animate={animControlls}
-        className="relative aspect-video w-[30rem] overflow-hidden rounded-md shadow-lg"
+        className="relative aspect-video w-full max-w-[30rem] overflow-hidden rounded-md shadow-lg"
       >
         {data.images.length > 2 && (
           <motion.img
@@ -78,7 +78,7 @@ function ProjectCard({ data, inverted }: Props) {
             animate={image2Controlls}
             src={data.images[nextImage] ?? ""}
             alt={data.name}
-            className="w-full h-full  absolute top-0 left-0 z-10"
+            className="w-full h-full  absolute top-0 left-0 z-10 object-fill"
           />
         )}
         <motion.img
@@ -87,14 +87,14 @@ function ProjectCard({ data, inverted }: Props) {
           animate={image1Controlls}
           src={data.images[currentImage] ?? ""}
           alt={data.name}
-          className="w-full h-full z-10"
+          className="w-full h-full z-10 object-fill"
         />
       </motion.div>
       <motion.div
         variants={variants}
         initial={`${inverted ? "hiddenLeft" : "hiddenRight"}`}
         animate={animControlls}
-        className={`flex flex-col "items-start text-left"
+        className={`flex flex-col "items-start text-center lg:text-left"
         justify-center gap-2`}
       >
         <h1 className="text-4xl font-normal tracking-wide">{data.name}</h1>
