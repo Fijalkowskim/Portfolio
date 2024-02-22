@@ -7,6 +7,7 @@ import SectionBorder from "./compontents/general/SectionBorder";
 import Skills from "./sections/skills/Skills";
 import Projects from "./sections/projects/Projects";
 import Contact from "./sections/contact/Contact";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const { disableScroll } = useSettingsContext();
@@ -15,12 +16,14 @@ function App() {
   }, [disableScroll]);
   return (
     <div>
-      <Navbar />
-      <Homepage />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
+      <BrowserRouter>
+        <Navbar />
+        <Homepage />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </BrowserRouter>
     </div>
   );
 }

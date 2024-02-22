@@ -1,14 +1,21 @@
 import React, { ReactNode } from "react";
-import SectionBorder from "../compontents/general/SectionBorder";
+import SectionBorder, {
+  BorderDirection,
+} from "../compontents/general/SectionBorder";
 interface Props {
   children: ReactNode;
   name: string;
+  direction?: BorderDirection;
 }
 function SectionBase(props: Props) {
   return (
-    <div>
-      <SectionBorder text={props.name} repeat={25} />
-      <div className="min-h-screen" id={props.name.toLowerCase()}>
+    <div className="">
+      <SectionBorder
+        text={props.name}
+        repeat={60}
+        direction={props.direction}
+      />
+      <div className="min-h-screen " id={props.name.toLowerCase()}>
         {props.children}
       </div>
     </div>

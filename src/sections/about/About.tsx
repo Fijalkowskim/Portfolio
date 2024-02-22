@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import SectionBase from "../SectionBase";
 import AboutPic from "../../images/about.jpg";
+import AboutBG from "../../images/aboutBG.jpg";
 import { useAnimation, useInView, motion } from "framer-motion";
-const hiddenDistance = 300;
+const hiddenDistance = 200;
 const variants = {
   hiddenLeft: { opacity: 0, x: -hiddenDistance },
   hiddenRight: { opacity: 0, x: hiddenDistance },
@@ -19,10 +20,14 @@ function About() {
   }, [isInView]);
   return (
     <SectionBase name="About">
-      <div className="bg-primary-900 min-h-screen flex items-center justify-center text-primary-50 gap-6">
+      <div className="relative bg-primary-900 min-h-screen lg:text-left text-center flex-col-reverse lg:flex-row flex items-center justify-center text-primary-50 gap-6 p-2 z-10">
+        <img
+          src={AboutBG}
+          className="w-full h-full absolute top-0 left-0 -z-10 object-cover opacity-15"
+        />
         <motion.div
           ref={ref}
-          className="aspect-square w-96 rounded-lg overflow-hidden"
+          className="aspect-square w-60 sm:w-96 rounded-lg overflow-hidden shadow-md"
           variants={variants}
           initial="hiddenLeft"
           animate={animControlls}
