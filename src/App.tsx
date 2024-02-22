@@ -8,6 +8,7 @@ import Skills from "./sections/skills/Skills";
 import Projects from "./sections/projects/Projects";
 import Contact from "./sections/contact/Contact";
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./compontents/footer/Footer";
 
 function App() {
   const { disableScroll } = useSettingsContext();
@@ -23,6 +24,7 @@ function App() {
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
       </BrowserRouter>
     </div>
   );
