@@ -47,7 +47,9 @@ function CustomButton({
         {...props}
         className={cn(
           variants({ variant, className }),
-          `${rounded ? "rounded-full px-2 py-2 " : ""}`
+          `${rounded ? "rounded-full px-2 py-2 " : ""} ${
+            props.disabled && "opacity-50 hover:bg-inherit"
+          }`
         )}
       >
         {children}

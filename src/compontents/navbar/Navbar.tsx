@@ -45,7 +45,12 @@ function Navbar() {
           <a href="#contact">
             <CustomButton className="min-w-28 text-base">Contact</CustomButton>
           </a>
-          <CustomButton className="min-w-28 text-base" variant={"inverted"}>
+          <CustomButton
+            className="min-w-28 text-base"
+            variant={"inverted"}
+            disabled
+            disableScaleAnimation
+          >
             CV
           </CustomButton>
         </div>
@@ -113,6 +118,8 @@ function Navbar() {
                 onClick={() => {
                   toggleMobileMenu();
                 }}
+                disabled
+                disableScaleAnimation
               >
                 CV
               </CustomButton>
