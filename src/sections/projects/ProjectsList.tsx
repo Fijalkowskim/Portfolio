@@ -11,6 +11,10 @@ import travel3 from "../../images/travel-memories/3.png";
 import travel4 from "../../images/travel-memories/4.png";
 import travel5 from "../../images/travel-memories/5.png";
 
+import finance1 from "../../images//finance-manager/1.png";
+import finance2 from "../../images//finance-manager/2.png";
+import finance3 from "../../images//finance-manager/3.png";
+
 export const ProjectsList: ProjectData[] = [
   {
     name: "Powerforge Fitness",
@@ -26,8 +30,17 @@ export const ProjectsList: ProjectData[] = [
     description:
       "Spring boot, React web app designed to publish and share photos from travels. Users can create travels, add images, browse public photos and create slideshows from their journeys. Connection to Google Maps API enables precise location picking and Spring backend service takes care of user authentication and preserves data in MySQL database.",
     technologies:
-      "Spring Boot, React, TypeScript, MySQL, Google Maps API, TailwindCSS",
+      "Spring Boot, Hibernate, React, TypeScript, MySQL, Google Maps API, TailwindCSS",
     githubLink: "https://github.com/Fijalkowskim/TravelMemories",
     images: [travel1, travel2, travel3, travel4, travel5],
+  },
+  {
+    name: "Finance Manager",
+    description:
+      "Sping boot, React application developed to help users manage their finances efficiently. After adding their expenses, users can analize data through various charts, view and sort the history and plan their future expenses.",
+    technologies:
+      "Spring Boot, Hibernate, React, TypeScript, MySQL, TailwindCSS",
+    githubLink: "https://github.com/Fijalkowskim/FinanceManager",
+    images: [finance1, finance2, finance3],
   },
 ];

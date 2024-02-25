@@ -45,14 +45,14 @@ function Navbar() {
           <a href="#contact">
             <CustomButton className="min-w-28 text-base">Contact</CustomButton>
           </a>
-          <CustomButton
+          {/* <CustomButton
             className="min-w-28 text-base"
             variant={"inverted"}
             disabled
             disableScaleAnimation
           >
             CV
-          </CustomButton>
+          </CustomButton> */}
         </div>
       </div>
       <motion.button
@@ -112,7 +112,7 @@ function Navbar() {
                   Contact
                 </CustomButton>
               </a>
-              <CustomButton
+              {/* <CustomButton
                 className="min-w-28 text-base"
                 variant={"inverted"}
                 onClick={() => {
@@ -122,7 +122,7 @@ function Navbar() {
                 disableScaleAnimation
               >
                 CV
-              </CustomButton>
+              </CustomButton> */}
             </motion.ul>
           </motion.div>
         )}
