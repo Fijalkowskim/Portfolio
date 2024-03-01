@@ -78,7 +78,7 @@ function ProjectCard({ data, inverted }: Props) {
             animate={image2Controlls}
             src={data.images[nextImage] ?? ""}
             alt={data.name}
-            className="w-full h-full  absolute top-0 left-0 z-10 object-fill"
+            className="w-full h-full  absolute top-0 left-0 z-10 object-cover"
           />
         )}
         <motion.img
@@ -87,7 +87,7 @@ function ProjectCard({ data, inverted }: Props) {
           animate={image1Controlls}
           src={data.images[currentImage] ?? ""}
           alt={data.name}
-          className="w-full h-full z-10 object-fill"
+          className="w-full h-full z-10 object-cover"
         />
       </motion.div>
       <motion.div

@@ -14,6 +14,15 @@ import travel5 from "../../images/travel-memories/5.png";
 import finance1 from "../../images//finance-manager/1.png";
 import finance2 from "../../images//finance-manager/2.png";
 import finance3 from "../../images//finance-manager/3.png";
+import finance4 from "../../images//finance-manager/4.png";
+
+import eshopping1 from "../../images/eshopping/1.png";
+import eshopping2 from "../../images/eshopping/2.png";
+import eshopping3 from "../../images/eshopping/3.png";
+
+import median1 from "../../images/median-filter/1.png";
+import median2 from "../../images/median-filter/2.png";
+import median3 from "../../images/median-filter/3.png";
 
 export const ProjectsList: ProjectData[] = [
   {
@@ -41,6 +50,22 @@ export const ProjectsList: ProjectData[] = [
     technologies:
       "Spring Boot, Hibernate, React, TypeScript, MySQL, TailwindCSS",
     githubLink: "https://github.com/Fijalkowskim/FinanceManager",
-    images: [finance1, finance2, finance3],
+    images: [finance1, finance2, finance3, finance4],
+  },
+  {
+    name: "Java EShopping app",
+    description:
+      "Simple java online shopping application made in 4 different versions: console, JavaFX, JavaEE using servlets and web app with MySQL database. Every version is written using MVC pattern, fully documented and tested with JUnit tests.",
+    technologies: "JavaFX, Jakarta EE, JUnit, MySQL",
+    githubLink: "https://github.com/Fijalkowskim/Fijalkowskim_EShopping_repo",
+    images: [eshopping1, eshopping2, eshopping3],
+  },
+  {
+    name: "Median filter",
+    description:
+      "Desktop application made for image median filtering. User interface made with Windows Forms App (.Net Framework) interacts with C++ and Assembly x64 dlls contaning filtering logic. App can run in multiple threads up to 64 and the time of C++ and Assembly libraries can be easly comapred due to built-in timer.",
+    technologies: "C# .Net Framework, Assembly x64, C++",
+    githubLink: "https://github.com/Fijalkowskim/MedianFilter",
+    images: [median1, median2, median3],
   },
 ];
