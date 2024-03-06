@@ -26,15 +26,6 @@ import median3 from "../../images/median-filter/3.png";
 
 export const ProjectsList: ProjectData[] = [
   {
-    name: "Powerforge Fitness",
-    description:
-      "MERN stack web application designed to assist individuals in their fitness journey. Website consists of workout routines, progress tracker with charts for data analysis and a BMI calculator. Backend REST service is responsible for saving user progress to MongoDB database.",
-    technologies: "React, Node.js, TypeScript, MongoDB, Express, TaiwlindCSS",
-    githubLink: "https://github.com/Fijalkowskim/Powerforge-Fitness",
-    websiteLink: "https://fijalkowskim.github.io/Powerforge-Fitness/",
-    images: [powerforge1, powerforge2, powerforge3, powerforge4],
-  },
-  {
     name: "Travel Memories",
     description:
       "Spring boot, React web app designed to publish and share photos from travels. Users can create travels, add images, browse public photos and create slideshows from their journeys. Connection to Google Maps API enables precise location picking and Spring backend service takes care of user authentication and preserves data in MySQL database.",
@@ -51,6 +42,16 @@ export const ProjectsList: ProjectData[] = [
       "Spring Boot, Hibernate, React, TypeScript, MySQL, TailwindCSS",
     githubLink: "https://github.com/Fijalkowskim/FinanceManager",
     images: [finance1, finance2, finance3, finance4],
+    websiteLink: "https://fijalkowskim.github.io/FinanceManager",
+  },
+  {
+    name: "Powerforge Fitness",
+    description:
+      "MERN stack web application designed to assist individuals in their fitness journey. Website consists of workout routines, progress tracker with charts for data analysis and a BMI calculator. Backend REST service is responsible for saving user progress to MongoDB database.",
+    technologies: "React, Node.js, TypeScript, MongoDB, Express, TaiwlindCSS",
+    githubLink: "https://github.com/Fijalkowskim/Powerforge-Fitness",
+    websiteLink: "https://fijalkowskim.github.io/Powerforge-Fitness/",
+    images: [powerforge1, powerforge2, powerforge3, powerforge4],
   },
   {
     name: "Java EShopping app",
