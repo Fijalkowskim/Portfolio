@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { SkillData } from "../../models/SkillData";
 import SkillCard from "./SkillCard";
 import { motion, useAnimation, useInView } from "framer-motion";
@@ -19,9 +19,9 @@ function SkillsGroup(props: Props) {
     if (isInView) {
       controlls.start("animate");
     }
-  }, [isInView]);
+  }, [isInView, controlls]);
   return (
-    <div className="flex flex-col items-center justify-center p-2 text-center sm:gap-6">
+    <div className="flex flex-col items-center flex-wrap justify-center p-2 text-center sm:gap-6">
       <motion.h1
         variants={cardVariants}
         initial="initial"
@@ -34,7 +34,7 @@ function SkillsGroup(props: Props) {
         layout
         ref={ref}
         transition={{ delayChildren: 1 }}
-        className="flex flex-row gap-2 p-2 w-full rounded-md items-start justify-center flex-wrap max-w-full"
+        className="flex flex-row gap-4 p-2 w-full rounded-md items-start justify-center flex-wrap max-w-full"
       >
         {props.skills.map((skill, idx) => (
           <SkillCard
