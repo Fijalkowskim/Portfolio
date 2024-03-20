@@ -1,5 +1,5 @@
 import { SkillData } from "../../models/SkillData";
-
+import SpringSecurity from "../../images/icons/spring-security.png";
 export const webSkills: SkillData[] = [
   {
     name: "Spring",
@@ -10,12 +10,20 @@ export const webSkills: SkillData[] = [
     img: "https://user-images.githubusercontent.com/25181517/183891303-41f257f8-6b3d-487c-aa56-c497b880d0fb.png",
   },
   {
+    name: "Spring Security",
+    img: SpringSecurity,
+  },
+  {
     name: "Hibernate",
     img: "https://user-images.githubusercontent.com/25181517/117207493-49665200-adf4-11eb-808e-a9c0fcc2a0a0.png",
   },
   {
     name: "Docker",
     img: "https://user-images.githubusercontent.com/25181517/117207330-263ba280-adf4-11eb-9b97-0ac5b40bc3be.png",
+  },
+  {
+    name: "Maven",
+    img: "https://user-images.githubusercontent.com/25181517/117207242-07d5a700-adf4-11eb-975e-be04e62b984b.png",
   },
   {
     name: "React",

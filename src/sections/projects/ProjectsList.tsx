@@ -28,9 +28,9 @@ export const ProjectsList: ProjectData[] = [
   {
     name: "Travel Memories",
     description:
-      "Spring boot, React web app designed to publish and share photos from travels. Users can create travels, add images, browse public photos and create slideshows from their journeys. Connection to Google Maps API enables precise location picking and Spring backend service takes care of user authentication and preserves data in MySQL database.",
+      "Spring boot, React web app designed to publish and share photos from travels. Users can create travels, add images, browse public photos and create slideshows from their journeys. Connection to Google Maps API enables precise location picking. Spring backend service takes care of user authentication and authorization using JWT tokens. Data is preserved in MySQL database.",
     technologies:
-      "Spring Boot, Hibernate, React, TypeScript, MySQL, Google Maps API, TailwindCSS",
+      "Spring Boot, Spring Security, Hibernate, React, TypeScript, MySQL, Google Maps API, TailwindCSS",
     githubLink: "https://github.com/Fijalkowskim/TravelMemories",
     images: [travel1, travel2, travel3, travel4, travel5],
   },
