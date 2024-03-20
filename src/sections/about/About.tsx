@@ -45,13 +45,13 @@ function About() {
         >
           <h1 className="text-6xl font-thin">About me</h1>
           <p className="max-w-xl">
-            I am a 22-year-old Polish computer science student with a passion
-            for creating innovative websites and robust backend services ready
-            to embark on a career in the IT industry. My expertise lies in
-            crafting intelligent, responsive website designs and developing
-            well-organized backend applications featuring clean, modular code. I
-            have consistently enhanced my skills through numerous personal
-            projects.
+            I am a polish computer science student driven by a passion for
+            crafting innovative websites and robust backend services primed for
+            the IT industry. My expertise lies in crafting intelligent,
+            responsive website designs and developing well-organized backend
+            applications featuring clean, modular code with attention to
+            security measures. I have consistently enhanced my skills through
+            numerous personal projects.
           </p>
         </motion.div>
       </div>
