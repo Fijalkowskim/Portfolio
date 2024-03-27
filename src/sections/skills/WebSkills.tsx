@@ -1,5 +1,6 @@
 import { SkillData } from "../../models/SkillData";
 import SpringSecurity from "../../images/icons/spring-security.png";
+import JUnit from "../../images/icons/JUnit.png";
 export const webSkills: SkillData[] = [
   {
     name: "Spring",
@@ -16,6 +17,10 @@ export const webSkills: SkillData[] = [
   {
     name: "Hibernate",
     img: "https://user-images.githubusercontent.com/25181517/117207493-49665200-adf4-11eb-808e-a9c0fcc2a0a0.png",
+  },
+  {
+    name: "JUnit",
+    img: JUnit,
   },
   {
     name: "Docker",
